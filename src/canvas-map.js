@@ -636,10 +636,10 @@ const CanvasMap=(props)=>{
           this.props.fontPresentColor,
           this.props.fontFutureColor
         )
-        this.ctx.strokeStyle='#FDFCEC'
+        this.ctx.strokeStyle='#cbc9bc'
         this.ctx.lineWidth=6
         let pos=add(point,{x:20*inverseZoom,y:0})
-        this.ctx.strokeText(point.label,...canvasPos(pos))
+        //this.ctx.strokeText(point.label,...canvasPos(pos))
         this.ctx.fillText(point.label,...canvasPos(pos))
       }
 
