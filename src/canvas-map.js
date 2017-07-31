@@ -162,7 +162,7 @@ const CanvasMap=(props)=>{
       this.canvas.style.top=0
       this.canvas.style.left=0
       this.ctx=this.canvas.getContext('2d',{alpha:false})
-      this.ctx.fillStyle='#fff'
+      this.ctx.fillStyle='#000'
       this.ctx.fillRect(0,0,this.state.width,this.state.height)
       this.container.appendChild(this.canvas)
 
@@ -510,7 +510,7 @@ const CanvasMap=(props)=>{
             x:(radius+1)*Math.cos(angleOrigin),
             y:(radius+1)*Math.sin(angleOrigin)
           }
-          let colorValue=imageVisibility*0.3
+          let colorValue=imageVisibility*0.6
           this.ctx.fillStyle=`rgba(220,220,202,${colorValue})`
           setCompositeOperation(this.ctx,'darken','source-over')
 
@@ -782,8 +782,8 @@ const CanvasMap=(props)=>{
 
       let gradient=this.ctx.createLinearGradient(this.sectionsBounds[0].right,0,this.sectionsBounds[0].right+200,0)
       if(blendWorks){
-        gradient.addColorStop(0,'rgba(185, 217, 151, 1)')
-        gradient.addColorStop(1,"rgba(185, 217, 151, 0)")
+        gradient.addColorStop(0,'rgba(203, 201, 188, 1)')
+        gradient.addColorStop(1,"rgba(203, 201, 188, 0)")
       }else{
         gradient.addColorStop(0,'rgba(255, 255, 255, 0.85)')
         gradient.addColorStop(1,"rgba(255, 255, 255, 0)")

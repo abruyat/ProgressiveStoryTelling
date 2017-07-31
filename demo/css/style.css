@@ -26,7 +26,7 @@
 body {
 	font-family: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #5d5c56;
-	background: #fff;
+	background: #000000;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -167,78 +167,6 @@ a:focus {
 	padding: 1em 0;
 	color: #464b4b;
 }
-
-
-/* Top Navigation Style */
-
-.codrops-links {
-	position: relative;
-	display: inline-block;
-	text-align: center;
-	white-space: nowrap;
-}
-
-.codrops-links::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 1px;
-	height: 100%;
-	background: rgba(255, 255, 255, 0.5);
-	-webkit-transform: rotate3d(0, 0, 1, 22.5deg);
-	transform: rotate3d(0, 0, 1, 22.5deg);
-}
-
-.codrops-icon {
-	display: inline-block;
-	width: 1.5em;
-	margin: 0.5em;
-	padding: 0em 0;
-	text-decoration: none;
-}
-
-.codrops-icon span {
-	display: none;
-}
-
-.codrops-icon:before {
-	font-family: 'codropsicons';
-	font-weight: normal;
-	font-style: normal;
-	font-variant: normal;
-	line-height: 1;
-	margin: 0 5px;
-	text-transform: none;
-	-webkit-font-smoothing: antialiased;
-	speak: none;
-}
-
-.codrops-icon--drop:before {
-	content: '\e001';
-	color: #09c;
-}
-
-.codrops-icon--prev:before {
-	content: '\e004';
-}
-
-
-/* Demo links */
-
-.codrops-demos {
-	margin: 2em 0 0;
-}
-
-.codrops-demos a {
-	display: inline-block;
-	margin: 0 0.5em;
-}
-
-.codrops-demos a.current-demo {
-	color: #333;
-}
-
 
 /* Content */
 
