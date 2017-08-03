@@ -154,7 +154,7 @@ a:focus {
 }
 
 .intro blockquote {
-	max-width: 800px;
+	max-width: 1000px;
 	margin: 0 auto;
 }
 
@@ -191,9 +191,9 @@ a:focus {
 	padding: 0 0 1em;
 }
 
-.author {
-	padding-left: 4em;
-}
+/* .author {
+	
+} */
 
 .media-item {
 	display: inline-block;
