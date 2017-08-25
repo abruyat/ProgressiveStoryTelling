@@ -349,6 +349,12 @@ a:focus {
 .js-gallery-content img {
 	max-width: 100%;
 	margin: 10px 0;
+	transition: transform 0.25s ease;
+}
+.js-gallery-content img:active {
+	-webkit-transform: matrix(2, 0, 0, 2, 300, 0);
+	-moz-transform: matrix(2, 0, 0, 2, 300, 0);
+	transform: matrix(2, 0, 0, 2, 300, 0);
 }
 
 @media(max-width: 720px) {
